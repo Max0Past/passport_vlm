@@ -159,14 +159,6 @@ LOCAL_DIR = "./models/florence2-large"
 def setup_florence2():
     """Основна функція встановлення моделі."""
     
-    print("=" * 70)
-    print(" PASSPORT READER - MODEL SETUP")
-    print("=" * 70)
-    print(f"\n[INFO] Model: {MODEL_ID}")
-    print(f"[INFO] Target Directory: {os.path.abspath(LOCAL_DIR)}")
-    print(f"[INFO] Size: ~18 GB (safetensors)")
-    print("\n[INFO] This may take 15-30 minutes...\n")
-    
     # Перевіряємо місце на диску
     local_path = Path(LOCAL_DIR)
     if local_path.exists():
